@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#testimonials {
+  background-color: rgb(245, 245, 245);
+  padding: 80px 8%;
+}
+
+#testimonials .testimonial-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#testimonials .testimonial-heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#testimonials .testimonial-heading h1 {
+  color: rgb(8, 13, 71);
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+#testimonials .testimonial-heading p {
+  color: rgb(80, 80, 80);
+  font-size: 18px;
+}
+
+#testimonials .testimonial-cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+#testimonials .testimonial-card {
+  background-color: rgb(255, 255, 255);
+  width: 260px;
+  min-height: 300px;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
+}
+
+#testimonials .testimonial-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
+}
+
+#testimonials .customer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+#testimonials .customer img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#testimonials .customer h3 {
+  color: rgb(8, 13, 71);
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+#testimonials .customer p {
+  color: rgb(80, 80, 80);
+  font-size: 13px;
+}
+
+#testimonials .stars {
+  color: rgb(255, 156, 0);
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+#testimonials .review {
+  color: rgb(80, 80, 80);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+@media (max-width: 1100px) {
+  #testimonials .testimonial-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 650px) {
+  #testimonials {
+    padding: 60px 20px;
+  }
+
+  #testimonials .testimonial-heading h1 {
+    font-size: 35px;
+  }
+
+  #testimonials .testimonial-heading p {
+    font-size: 16px;
+  }
+
+  #testimonials .testimonial-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #testimonials .testimonial-card {
+    width: 100%;
+    max-width: 350px;
+  }
+}
