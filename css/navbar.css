@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#navbar {
+  background-color: rgb(245, 245, 245);
+  border-radius: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+#navbar #my-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#navbar #my-navbar .logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 20px;
+}
+
+#navbar #my-navbar .logo img {
+  width: 130px;
+  height: 130px;
+}
+
+#navbar #my-navbar .logo h2 {
+  font-size: 30px;
+  color: rgb(8, 13, 71);
+}
+
+#navbar #my-navbar .nav-links {
+  display: flex;
+  gap: 20px;
+  color: rgb(8, 13, 71);
+}
+
+#navbar #my-navbar .nav-links a {
+  text-decoration: none;
+  color: rgb(8, 13, 71);
+  font-size: 25px;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+#navbar #my-navbar .nav-links a:hover {
+  background-color: rgb(8, 13, 71);
+  color: rgb(255, 255, 255);
+  border-radius: 8px;
+}
+
+#navbar #my-navbar .auth-buttons {
+  display: flex;
+  gap: 20px;
+  padding-right: 20px;
+}
+
+#navbar #my-navbar .auth-buttons .login {
+  background-color: rgb(255, 156, 0);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+#navbar #my-navbar .auth-buttons .register {
+  background-color: rgb(8, 13, 71);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  #navbar #my-navbar {
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+
+  #navbar #my-navbar .logo {
+    padding-left: 10px;
+  }
+
+  #navbar #my-navbar .logo img {
+    width: 100px;
+    height: 100px;
+  }
+
+  #navbar #my-navbar .logo h2 {
+    font-size: 24px;
+  }
+
+  #navbar #my-navbar .nav-links {
+    gap: 10px;
+  }
+
+  #navbar #my-navbar .nav-links a {
+    font-size: 20px;
+    padding: 8px;
+  }
+
+  #navbar #my-navbar .auth-buttons {
+    gap: 10px;
+    padding-right: 10px;
+  }
+
+  #navbar #my-navbar .auth-buttons .login {
+    font-size: 17px;
+    padding: 9px;
+  }
+
+  #navbar #my-navbar .auth-buttons .register {
+    font-size: 17px;
+    padding: 9px;
+  }
+}
+
+@media (max-width: 700px) {
+  #navbar #my-navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px 10px;
+  }
+
+  #navbar #my-navbar .logo {
+    width: 100%;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  #navbar #my-navbar .logo img {
+    width: 80px;
+    height: 80px;
+  }
+
+  #navbar #my-navbar .logo h2 {
+    font-size: 22px;
+  }
+
+  #navbar #my-navbar .nav-links {
+    gap: 5px;
+  }
+
+  #navbar #my-navbar .nav-links a {
+    font-size: 16px;
+    padding: 7px;
+  }
+
+  #navbar #my-navbar .auth-buttons {
+    gap: 8px;
+    padding-right: 0;
+  }
+
+  #navbar #my-navbar .auth-buttons .login {
+    font-size: 15px;
+    padding: 8px;
+  }
+
+  #navbar #my-navbar .auth-buttons .register {
+    font-size: 15px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 450px) {
+  #navbar #my-navbar .logo img {
+    width: 65px;
+    height: 65px;
+  }
+
+  #navbar #my-navbar .logo h2 {
+    font-size: 19px;
+  }
+
+  #navbar #my-navbar .nav-links a {
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  #navbar #my-navbar .auth-buttons .login {
+    font-size: 13px;
+    padding: 7px;
+  }
+
+  #navbar #my-navbar .auth-buttons .register {
+    font-size: 13px;
+    padding: 7px;
+  }
+}

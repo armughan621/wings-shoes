@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  padding: 100px 10% 40px;
+  background-color: rgb(245, 245, 245);
+  box-sizing: border-box;
+}
+
+#hero .hero-text {
+  width: 50%;
+}
+
+#hero .hero-text h1 {
+  font-size: 68px;
+  line-height: 1.1;
+  color: rgb(8, 13, 71);
+  margin: 0 0 25px;
+}
+
+#hero .hero-text h1 span {
+  color: rgb(255, 156, 0);
+}
+
+#hero .hero-text p {
+  font-size: 21px;
+  line-height: 1.6;
+  color: rgb(80, 80, 80);
+  max-width: 550px;
+  margin: 0 0 30px;
+}
+
+#hero .hero-text button {
+  background-color: rgb(255, 156, 0);
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 600;
+  padding: 13px 25px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#hero .hero-text button:hover {
+  background-color: rgb(230, 135, 0);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+#hero .hero-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero .hero-image img {
+  width: 90%;
+  max-width: 550px;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+#hero .hero-image img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  #hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 120px 20px 40px;
+  }
+
+  #hero .hero-text {
+    width: 100%;
+  }
+
+  #hero .hero-text h1 {
+    font-size: 45px;
+  }
+
+  #hero .hero-text p {
+    font-size: 18px;
+    max-width: 500px;
+    margin: 0 auto 25px;
+  }
+
+  #hero .hero-image {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  #hero .hero-image img {
+    width: 85%;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero {
+    height: auto;
+    min-height: auto;
+    padding-top: 120px;
+    padding-bottom: 30px;
+    gap: 10px;
+  }
+
+  #hero .hero-text {
+    width: 100%;
+  }
+
+  #hero .hero-text h1 {
+    margin-bottom: 15px;
+  }
+
+  #hero .hero-text p {
+    margin-bottom: 20px;
+  }
+
+  #hero .hero-image {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  #hero .hero-image img {
+    width: 75%;
+  }
+}

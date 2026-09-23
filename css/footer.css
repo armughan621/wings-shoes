@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#footer {
+  background-color: rgb(8, 13, 71);
+  color: rgb(255, 255, 255);
+  padding: 60px 10% 20px;
+}
+
+#footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+#footer .footer-brand {
+  width: 40%;
+}
+
+#footer .footer-brand h2 {
+  color: rgb(255, 156, 0);
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+#footer .footer-brand p {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 350px;
+}
+
+#footer .footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#footer .footer-social {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#footer .footer-links h3 {
+  color: rgb(255, 156, 0);
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#footer .footer-social h3 {
+  color: rgb(255, 156, 0);
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#footer .footer-links a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+#footer .footer-social a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+#footer .footer-links a:hover {
+  color: rgb(255, 156, 0);
+  transform: translateX(5px);
+}
+
+#footer .footer-social a:hover {
+  color: rgb(255, 156, 0);
+  transform: translateX(5px);
+}
+
+#footer .footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 40px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+#footer .footer-bottom p {
+  color: rgb(200, 200, 200);
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  #footer {
+    padding: 50px 8% 20px;
+  }
+
+  #footer .footer-container {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  #footer .footer-brand {
+    width: 100%;
+  }
+
+  #footer .footer-links {
+    width: 40%;
+  }
+
+  #footer .footer-social {
+    width: 40%;
+  }
+}
+
+@media (max-width: 450px) {
+  #footer {
+    padding: 40px 25px 20px;
+  }
+
+  #footer .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  #footer .footer-brand {
+    width: 100%;
+  }
+
+  #footer .footer-brand p {
+    margin: auto;
+  }
+
+  #footer .footer-links {
+    width: 100%;
+    align-items: center;
+  }
+
+  #footer .footer-social {
+    width: 100%;
+    align-items: center;
+  }
+
+  #footer .footer-links a:hover {
+    transform: none;
+  }
+
+  #footer .footer-social a:hover {
+    transform: none;
+  }
+
+  #footer .footer-bottom {
+    margin-top: 30px;
+  }
+}

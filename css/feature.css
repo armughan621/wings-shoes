@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#shoes-features {
+  background-color: rgb(245, 245, 245);
+  min-height: 100vh;
+  padding: 80px 8%;
+}
+
+#shoes-features #features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#shoes-features #features .feature-text {
+  text-align: center;
+  max-width: 800px;
+  margin-bottom: 50px;
+}
+
+#shoes-features #features .feature-text h1 {
+  color: rgb(8, 13, 71);
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+#shoes-features #features .feature-text p {
+  color: rgb(80, 80, 80);
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+#shoes-features #features .cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+#shoes-features #features .cards .card {
+  background-color: rgb(255, 255, 255);
+  width: 280px;
+  min-height: 450px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgb(225, 225, 225);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+#shoes-features #features .cards .card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+#shoes-features #features .cards .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+#shoes-features #features .cards .card h1 {
+  color: rgb(255, 156, 0);
+  font-size: 25px;
+  text-align: center;
+  margin: 20px 15px 10px;
+}
+
+#shoes-features #features .cards .card p {
+  color: rgb(80, 80, 80);
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  padding: 0 18px 25px;
+}
+
+@media (max-width: 1100px) {
+  #shoes-features {
+    padding: 70px 5%;
+  }
+
+  #shoes-features #features .cards {
+    gap: 20px;
+  }
+
+  #shoes-features #features .cards .card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 650px) {
+  #shoes-features {
+    min-height: auto;
+
+    padding: 60px 20px;
+  }
+
+  #shoes-features #features .feature-text {
+    margin-bottom: 35px;
+  }
+
+  #shoes-features #features .feature-text h1 {
+    font-size: 38px;
+  }
+
+  #shoes-features #features .feature-text p {
+    font-size: 17px;
+  }
+
+  #shoes-features #features .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #shoes-features #features .cards .card {
+    width: 100%;
+    max-width: 350px;
+  }
+}
